@@ -51,7 +51,7 @@ export function useChat(sessionId: string): UseChatReturn {
         const assistantMsg: Message = {
           id: crypto.randomUUID(),
           role: "assistant",
-          content: data.response,
+          content: data.reply,
           timestamp: new Date(),
         };
         setMessages((prev) => [...prev, assistantMsg]);

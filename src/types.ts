@@ -14,6 +14,6 @@ export interface ChatRequest {
 
 /** Response body from POST /api/chat */
 export interface ChatResponse {
-  response: string;
+  reply: string;
   session_id: string;
 }
